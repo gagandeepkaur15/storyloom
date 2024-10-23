@@ -17,10 +17,8 @@ class MainLayout extends StatefulWidget {
 class _MainLayoutState extends State<MainLayout> {
   int _selectedPage = 0;
 
-  // List of pages
   final List<Widget> _pages = [
     const HomePage(),
-    const StoriesPage(),
     const GenresPage(),
     const FolktalesPage(),
     const ContributePage(),

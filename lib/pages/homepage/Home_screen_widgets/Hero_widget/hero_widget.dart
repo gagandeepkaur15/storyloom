@@ -66,6 +66,23 @@ class HeroSectionState extends State<HeroSection> {
                 )
               : const Center(child: CircularProgressIndicator()),
 
+          // Gradient overlay
+          Positioned.fill(
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Colors.transparent,
+                    Colors.black.withOpacity(0.9),
+                  ],
+                  stops: [0.7, 1.0], // Adjust the stops as needed
+                ),
+              ),
+            ),
+          ),
+
           // Overlay text and content
           Center(
             child: Padding(
