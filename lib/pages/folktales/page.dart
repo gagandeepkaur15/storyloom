@@ -6,18 +6,16 @@ class FolktalesPage extends StatefulWidget {
   const FolktalesPage({super.key});
 
   @override
-  _FolktalesPageState createState() => _FolktalesPageState();
+  FolktalesPageState createState() => FolktalesPageState(); // Made public
 }
 
-class _FolktalesPageState extends State<FolktalesPage> {
+class FolktalesPageState extends State<FolktalesPage> {
+  // Made public
   String selectedCountry = 'All';
 
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
-
-    final String country =
-        ModalRoute.of(context)?.settings.arguments as String? ?? 'All';
 
     return Scaffold(
       body: SingleChildScrollView(

@@ -22,7 +22,8 @@ class _MainLayoutState extends State<MainLayout> {
     const GenresPage(),
     const FolktalesPage(),
     const ContributePage(),
-    const ContactPage()
+    const ContactPage(),
+    const StoriesPage()
   ];
 
   void _onMenuItemSelected(int index) {

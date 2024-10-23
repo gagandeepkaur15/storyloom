@@ -6,10 +6,11 @@ class GenresPage extends StatefulWidget {
   const GenresPage({super.key});
 
   @override
-  _GenresPageState createState() => _GenresPageState();
+  GenresPageState createState() => GenresPageState(); // Made public
 }
 
-class _GenresPageState extends State<GenresPage> {
+class GenresPageState extends State<GenresPage> {
+  // Made public
   String selectedGenre = 'All'; // Default genre
 
   @override
@@ -45,7 +46,6 @@ class _GenresPageState extends State<GenresPage> {
             ),
             const SizedBox(height: 20), // Add spacing
 
-            // Displaying stories (dummy data for now)
             const GenreStoryCardWidget(
               image:
                   "https://i.pinimg.com/564x/ca/a6/b7/caa6b7765a6c9f19b355f44bb0d561b2.jpg",
@@ -61,7 +61,7 @@ class _GenresPageState extends State<GenresPage> {
               genre: "Russia",
               description: "Once upon a time, in a faraway kingdom, there...",
             ),
-            const SizedBox(height: 32), // Extra space at the bottom
+            const SizedBox(height: 32),
           ],
         ),
       ),
