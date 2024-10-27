@@ -42,7 +42,10 @@ class _DemoLocalizationDelegate
 
   @override
   Future<DemoLocalization> load(Locale locale) async {
+
+
     DemoLocalization localization = DemoLocalization(locale); // Removed 'new'
+
     await localization.load();
     return localization;
   }
